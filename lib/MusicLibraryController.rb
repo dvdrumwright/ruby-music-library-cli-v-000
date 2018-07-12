@@ -88,7 +88,6 @@ choose_song.songs.sort {|s1,s2| s1.name <=> s2.name}.each_with_index{ |song,inde
 
 end               
  
-binding.pry 
 
  
 
