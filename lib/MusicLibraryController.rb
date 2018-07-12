@@ -89,7 +89,7 @@ song_list_genre.sort {|s1,s2| s1.name <=> s2.name}.each_with_index{ |song,index|
 end    
  
  
-
+song_list_genre = Song.all.select { |song| song.name == user_input.name}
  
 
   end 
