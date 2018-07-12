@@ -88,6 +88,7 @@ song_list_genre.sort {|s1,s2| s1.name <=> s2.name}.each_with_index{ |song,index|
   puts "#{index+1}. #{song.artist.name} - #{song.name}"}
 end    
  
+ 
 
  
 
