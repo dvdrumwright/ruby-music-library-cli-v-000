@@ -66,7 +66,7 @@ if matching_artist = Artist.all.find { |artist|  artist.name == user_input  }
  puts "#{index+1}. #{song.name} - #{song.genre.name}" }
  end 
  end 
- binding.pry 
+ 
 def list_songs_by_genre
   puts "Please enter the name of a genre:"
   user_input = gets.chomp
