@@ -83,8 +83,9 @@ puts "Which song number would you like to play?"
 user_input = gets.chomp
 song_list_genre = Song.all
 song = song_list_genre.sort {|s1,s2| s1.name <=> s2.name}[user_input.to_i - 1] 
+if song
 puts "Playing #{song.name} by #{song.artist.name}"
-
+end 
 end
  
 
