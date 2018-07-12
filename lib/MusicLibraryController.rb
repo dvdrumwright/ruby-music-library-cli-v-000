@@ -83,7 +83,7 @@ puts "Which song number would you like to play?"
 user_input = gets.chomp
 song_list_genre = Song.all
 
-if (user_input.to_i - 1) <= song_list_genre.length 
+if (1..Song.all.length).include?(user_input.to_i)
 song = song_list_genre.sort {|s1,s2| s1.name <=> s2.name}[user_input.to_i - 1] 
 end
 if song
