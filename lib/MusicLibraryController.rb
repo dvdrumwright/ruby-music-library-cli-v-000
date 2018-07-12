@@ -85,7 +85,7 @@ user_input = gets.chomp
 song_list_genre = Song.all[gets.to_i - 1] 
 song_list_genre.songs.sort {|s1,s2| s1.name <=> s2.name}.each_with_index{ |song,index| 
   puts "#{index+1}. #{song.artist.name} - #{song.name}"}
-
+binding.pry 
 end               
  
 
