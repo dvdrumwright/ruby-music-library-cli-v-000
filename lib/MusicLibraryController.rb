@@ -88,7 +88,7 @@ song_list_genre.songs.sort {|s1,s2| s1.name <=> s2.name}.each_with_index{ |song,
 
 end               
  
-
+binding.pry 
 
  
 
