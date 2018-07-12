@@ -82,12 +82,23 @@ def play_song
 puts "Which song number would you like to play?"
 user_input = gets.chomp
 song_list_genre = Song.all[user_input.to_i - 1] 
-puts "#{user_input}. #{song_list_genre.artist.name} - #{song_list_genre.name}"
+puts 
 
 end
  
 
  
+def play_song
+puts "Which song number would you like to play?"
+user_input = gets.chomp
+song_list_genre = Song.all[user_input.to_i - 1] 
+  # binding.pry
+song_list_genre.sort {|s1,s2| s1.name <=> s2.name}.each_with_index{ |song,index| 
+  puts "#{index+1}. #{song.artist.name} - #{song.name}"}
+
+end
+
+# puts "#{user_input}. #{song_list_genre.artist.name} - #{song_list_genre.name}"
 
 
 end
