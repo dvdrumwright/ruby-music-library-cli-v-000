@@ -30,6 +30,8 @@ when "list genre"
   self.list_songs_by_genre
 when "play song"
   self.play_song 
+  when "list songs"
+    self.list_songs
 when "exit"
    'exit' 
 else call 
